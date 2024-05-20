@@ -15,9 +15,9 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: dolanas-base-page # unique identifier
-    name: 1ab.cc
-    description: 'DolaNAS default page.' # default=empty
+  - id: dolanas-default-page # unique identifier
+    name: 'DolaNAS default page.'
+    description: 'DolaNAS from DolaNetwork.' # default=empty
     url: 'https://1ab.cc/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
