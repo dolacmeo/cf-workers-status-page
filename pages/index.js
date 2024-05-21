@@ -100,11 +100,11 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             </a>
             &{' '}
             <a href="https://github.com/eidam/cf-workers-status-page" target="_blank">
-              eidam/cf-workers-status-page{' '}
+              eidam{' '}
             </a>
           </div>
           <div>
-            <span>Modify & Translations by
+            <span>Modify & Translations by{' '}
               <a href="https://github.com/dolacmeo" target="_blank">
                 dolacmeo{' '}
               </a>
