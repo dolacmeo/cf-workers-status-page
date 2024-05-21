@@ -1,23 +1,23 @@
 settings:
-  title: 'Status Page'
+  title: 'DolaNetworks Status Page'
   url: 'https://status.1ab.cc' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  logo: dolacmeo_256.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有服务均在线All Systems Operational'
+  notAllmonitorsOperational: '部分服务异常Not All Systems Operational'
+  monitorLabelOperational: '在线Operational'
+  monitorLabelNotOperational: '异常Not Operational'
+  monitorLabelNoData: '无数据'
+  dayInHistogramNoData: '无数据No data'
+  dayInHistogramOperational: '均正常All good'
+  dayInHistogramNotOperational: ' 异常(s)' # xx incident(s) recorded
 
 monitors:
   - id: dolanas-default-page # unique identifier
     name: 'DolaNAS default page.'
-    description: 'DolaNAS from DolaNetwork.' # default=empty
+    description: 'from DolaNetwork.' # default=empty
     url: 'https://1ab.cc/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200

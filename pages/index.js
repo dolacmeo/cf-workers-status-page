@@ -98,14 +98,17 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             <a href="https://flareact.com/" target="_blank">
               Flareact{' '}
             </a>
+            &{' '}
+            <a href="https://github.com/eidam/cf-workers-status-page" target="_blank">
+              eidam/cf-workers-status-page{' '}
+            </a>
           </div>
           <div>
-            <a
-              href="https://github.com/eidam/cf-workers-status-page"
-              target="_blank"
-            >
-              Get Your Status Page
-            </a>
+            <span>Modify & Translations by
+              <a href="https://github.com/dolacmeo" target="_blank">
+                dolacmeo{' '}
+              </a>
+            </span>
           </div>
         </div>
       </div>
