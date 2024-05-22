@@ -42,15 +42,6 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: dolanas-default-page # unique identifier
-    name: 'DolaNAS default page'
-    description: 'from DolaNetwork.' # default=empty
-    url: 'https://nas.1ab.cc:5443/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
   - id: domains-1ab.cc
     name: 'Domain: 1ab.cc'
     description: 'by Synology Web Station' # default=empty
