@@ -15,10 +15,82 @@ settings:
   dayInHistogramNotOperational: ' 异常(s)' # xx incident(s) recorded
 
 monitors:
+  - id: website-profile-page
+    name: 'dolacmeo profile page'
+    description: 'by bento.me' # default=empty
+    url: 'https://dolacmeo.1ab.cc/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: website-blog
+    name: 'dolacmeo blog'
+    description: 'by NotionNext' # default=empty
+    url: 'https://blog.1ab.cc/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
+  - id: website-allfree
+    name: 'free share page'
+    description: 'by super.so' # default=empty
+    url: 'https://allfree.super.site/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+
   - id: dolanas-default-page # unique identifier
-    name: 'DolaNAS default page.'
+    name: 'DolaNAS default page'
     description: 'from DolaNetwork.' # default=empty
+    url: 'https://nas.1ab.cc:5443/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: domains-1ab.cc
+    name: 'Domain: 1ab.cc'
+    description: 'by Synology Web Station' # default=empty
     url: 'https://1ab.cc/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: domains-1234566.xyz
+    name: 'Domain: 1234566.xyz'
+    description: 'by cloudflare page' # default=empty
+    url: 'https://1234566.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: domains-268435455.xyz
+    name: 'Domain: 268435455.xyz'
+    description: 'by cloudflare page' # default=empty
+    url: 'https://268435455.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: domains-1abcd.eu.org
+    name: 'Domain: 1abcd.eu.org'
+    description: 'by cloudflare page' # default=empty
+    url: 'https://1abcd.eu.org/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: domains-dolacmeo.eu.org
+    name: 'Domain: dolacmeo.eu.org'
+    description: 'by cloudflare page' # default=empty
+    url: 'https://dolacmeo.eu.org/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
